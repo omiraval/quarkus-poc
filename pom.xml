@@ -9,6 +9,8 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>quarkus-call-https</module>
+        <module>quarkus-camel-https</module>
     </modules>
 
     <build>

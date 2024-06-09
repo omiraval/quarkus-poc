@@ -1,0 +1,5 @@
+quarkus:
+    rest-client:
+        extensions-api:
+            scope: jakarta.inject.Singleton
+            url: https://stage.code.quarkus.io/api
