@@ -4,7 +4,7 @@ import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.rest.RestParamType;
 
-public class ExampleRoute extends RouteBuilder {
+public class ExtensionRoute extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
@@ -22,6 +22,5 @@ public class ExampleRoute extends RouteBuilder {
                 .removeHeader(Exchange.HTTP_PATH)
                 .toD("{{quarkus.rest-client.extensions-api.url}}?bridgeEndpoint=true&id=${header.id}")
                 .log("response received: ${body}");
-                ;
     }
 }
